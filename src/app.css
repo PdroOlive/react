@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+}
+
+:root
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    background-color: #222222;
+    color: white;
+}
+
+#section-navbar
+{
+    background-color: #333333;
+    box-shadow: 0 2px 15px 5px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10.0rem;
+}
+
+#image-title-navbar
+{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+
+#title-navbar
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3.2rem;
+    font-weight: 400;
+}
+
+#links-navbar
+{
+    font-size: 1.8rem;
+    list-style: none;
+    display: flex;
+    gap: 4.2rem;
+    font-weight: 700;
+}
