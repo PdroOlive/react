@@ -1,0 +1,36 @@
+#article-group
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+#section-texts 
+{
+    display: flex;
+    height: 18rem;
+    width: 86.4rem;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: flex-start;
+}
+
+#section-texts h2
+{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#section-texts span
+{
+   font-size: 2rem;
+   color: #8695a4a9;
+}
+
+#section-texts p
+{
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+
