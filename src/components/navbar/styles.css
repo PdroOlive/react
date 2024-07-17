@@ -10,6 +10,7 @@
     justify-content: space-around;
     padding-block: 1.8rem;
     z-index: 1;
+    gap: 3rem;
 }
 
 #image-title-navbar
