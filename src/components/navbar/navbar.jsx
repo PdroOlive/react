@@ -3,11 +3,9 @@ import logoNav from "../../saturn-icon.png";
 import "./styles.css";
 
 
-export class Navbar extends React.Component
+export function Navbar()
 {
-    render()
-    {
-        return (
+    return (
         <header>
             <nav id="nav-navbar">
                 <div id="image-title-navbar">
@@ -21,8 +19,7 @@ export class Navbar extends React.Component
                     <li>About us</li>
                 </ul>
             </nav>
-      </header>
-        )
-    }
+        </header>
+    )
 }
 
