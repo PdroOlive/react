@@ -1,58 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 
-export class Counter extends React.Component
+export const Counter = () =>
 {
-    constructor()
-    {
-        super()
-        this.state = { contador: 0, name: "", password: ""};
-    }
-    render()
-    {
-        return (
-            <section style={{margin: "5rem auto"}}>
-                <h1>{this.state.contador}</h1>
+    const [cont, setCont] = useState(0);
+    return (
+        <section style={{margin: "5rem auto"}}>
+            <h1>{cont}</h1>
 
-                <div>
-                    <button onClick={() => 
-                        {
-                            this.setState({contador: this.state.contador -1})
+            <div>
+                <button 
+                onClick={() =>
+                {
+                    setCont(cont - 1);
 
-                        }}>Diminuir</button>
+                }}>Diminuir</button>
 
-                    <button onClick={() => 
-                    {
-                        this.setState({contador: this.state.contador +1})
-                    }}>Aumentar</button>
-                </div>
+                <button 
+                onClick={() => 
+                {
+                    setCont(cont + 1);
+                }}>Aumentar</button>
+            </div>
 
-                <form style={{marginTop: "3rem"}}>
-                    <input 
-                    type="text" 
-                    placeholder="Name" 
-                    onChange=
-                    {(event) =>
-                        {
-                            let nameUser = this.setState({name: event.target.value});
-                            console.log(this.state.name);
-                        }
-                    } />
-
-
-
-                    <input 
-                    type="password" 
-                    placeholder="Senha" 
-                    onChange=
-                    {(event) =>
-                        {
-                            this.setState({password: event.target.value})
-                            console.log(this.state.password)
-                        }
-                    }/>
-                    <button>Enviar</button>
-                </form>
-            </section>
-        );
-    }
+        </section>
+    );
 }
