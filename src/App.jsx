@@ -1,12 +1,12 @@
 import React from "react";
-// import {Navbar} from "./components/navbar/navbar";
-// import {Article} from "./components/article/article";
-// import imageOne from "./components/article/image001.png"
-// import imageTwo from "./components/article/image002.png"
-// import imageThree from "./components/article/image003.png"
+import {Navbar} from "./components/navbar/navbar";
+import {Article} from "./components/article/article";
+import imageOne from "./components/article/image001.png"
+import imageTwo from "./components/article/image002.png"
+import imageThree from "./components/article/image003.png"
 
 import "./app.css";
-import { Counter } from "./components/counter/counter";
+// import { Counter } from "./components/counter/counter";
 // import { Counter } from "./components/counter/counter";
 
 export class App extends React.Component 
@@ -15,9 +15,9 @@ export class App extends React.Component
   {
     return (
       <>
-        {/* <Navbar /> */}
-        <Counter />
-        {/* <section id="articles-list">
+        <Navbar />
+        {/* <Counter /> */}
+        <section id="articles-list">
             <Article 
             title="Designing Dashboards" 
             provider="NASA" 
@@ -40,7 +40,7 @@ export class App extends React.Component
             image={imageOne}
             />
           
-        </section> */}
+        </section>
         
       </>
     );
