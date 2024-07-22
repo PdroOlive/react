@@ -1,0 +1,42 @@
+#nav-field
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333333;
+    padding: 1rem;
+    gap: 1rem;
+    line-height: 1;
+    section
+    {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: #fff;
+
+        h1
+        {
+            font-size: 1.8rem;
+            font-weight: 400;
+        }
+    }
+
+    ul
+    {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.4rem;
+        font-weight: 100;
+
+        li
+        {
+            color: #a7a7a7;
+            line-height: 1;
+        }
+    }
+    
+
+    
+}
