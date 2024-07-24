@@ -1,14 +1,14 @@
 import styles from "./styles/article.module.scss";
 
-export const Article = ({title, image, provider}) =>
+export const Article = ({title, provider, description, image, link}) =>
 {
     return(
         <article id={styles["article-field"]}>
-            <img src={image} alt="" />
+            <a href={link} target="blank"><img src={image} alt="" /></a>
             <section>
                 <h2>{title}</h2>
-                <span>{provider}</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi adipisci optio quaerat veritatis excepturi laborum nemo officia nesciunt, facere eveniet! Tenetur quasi natus ratione voluptate perspiciatis similique ea placeat vitae.</p>
+                <a href={link} target="blank"><span>{provider}</span></a>
+                <p>{description}</p>
             </section>
         </article>
     )

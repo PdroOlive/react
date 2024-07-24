@@ -5,8 +5,11 @@
     align-items: center;
     background-color: #333333;
     padding: 1rem;
+    margin-bottom: 5rem;
     gap: 1rem;
     line-height: 1;
+
+    box-shadow: 0 5px 10px black;
     section
     {
         display: flex;

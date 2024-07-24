@@ -12,6 +12,17 @@
     font-size: 62.5%
 }
 
+body::-webkit-scrollbar
+{
+    width: 0.7rem;
+    background-color: #222222;
+}
+body::-webkit-scrollbar-thumb
+{
+    background-color: #535353;
+    border-radius: 5rem;
+}
+
 body
 {
     height: 100vh;
